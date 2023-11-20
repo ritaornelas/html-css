@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    /*height:100% ;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #ECF2D5,#E5F2C9 );
+}
+
+p{
+    text-align: justify;
+  <i class="fas fa-cloud"></i>
+}
+
+main{
+    background-color: white;
+    border:10px solid green;
+    border-radius: 30px;
+    width: 600px;
+    box-shadow: 3px 3px 3px rgb(216, 147, 147);
+    padding: 20px;
+    margin: 20px; /*fica sempre no meio quer eu aumente ou diminua a tela*/
+}
+
+h1{
+  color: #BFA995; 
+  text-align: center;  /*centrar*/
+  text-shadow: 1px 1px 2px rgb(171, 120, 120);  /*sobra no texto*/
+}
+
+h2{
+    color: #A6877C;
+}
+
