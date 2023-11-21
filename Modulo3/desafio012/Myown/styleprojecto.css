@@ -1,54 +1,151 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+
+:root{
+    --font1: verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-size: 1em;
 }
 
-body{
+html, body{
     background-color:white;
+    min-width: 100vw;
+    font-family: var(--font1)
 }
+
+
 
 
 /*header*/
 header{
     background-color: black;
     text-align: center;
-
-}
-
-header>h1{
-    font-family: 'Passion One', sans-serif;
+ 
     color:white;
-    font-size: 192px ;
+
 }
 
-header>a{
+
+header h1{
+    font-family: var(--font2);
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 15vw ;
+}
+
+header h2{
+    color: white;
+    padding-bottom: 50px;
+    font-family: var(--font1);
+    font-size: 2vw;
+}
+
+header a, footer a{
     color: white;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13.3px;
+    font-weight:bolder;
+ 
 }
 
-header a:hover{
+header a:visited, footer a:visited{
+    color:white;
+}
+
+header a:link, footer a:link {
+    color: white;
+  }
+
+
+
+
+header a:hover, footer a:hover{
     text-decoration-line: underline;
     color:white;
 
 }
 
 
-/*main*/
-main>.section1{
+/*------------main-------------------*/
+
+section{
+    padding-top:10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size:3vw;
+}
+
+.normal >p{
+    padding-bottom: 50px;
+}
+
+
+/*section1 section3 section5*/
+main>.normal{
     background-color: white;
     color: rgb(0, 0, 0);
-    width: 50%;
-    font-size: 67px;
-    font-family: 'Passion One', sans-serif;
    
+   
+   
+}
+
+/*section2 e section4*/
+main>.section2{
+    
+    color: white;
+    background-image: url('../imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  right center;
+    background-size: cover;  
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.593);
+   
+}
+
+
+main .section2 p, main .section4 p{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.278);
+}
+
+
+main>.section4{
+    color: white;
+    background-image: url('../imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  right center;
+    background-size: cover; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.593); 
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---footer--*/
+footer{
+    background-color: black;
 }
