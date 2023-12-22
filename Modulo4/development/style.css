@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+
+
+*{
+    font-family: Inter;
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+/* cores:
+vermelho: #cc1c2a
+cinza header: #eaeaec
+ */
+
+
+
+body,html{
+  height: 100vh;
+  width: 100vw;
+  background-color:  #eaeaec;
+}
+
+
+/*header*/
+
+header{
+  height: 10rem ;
+  width: 26.875;
+  background-color:  #eaeaec;
+}
+
+header>div{
+  background-color: aqua;
+}
+
+
+header>img{
+    display: block;
+    margin: auto;
+   
+}
+
+
+
+menu{
+  width: 80vw;
+  text-align: center;
+  margin: auto;
+  padding-top: 1em;
+ 
+}
+
+li{
+  display: inline-flex;
+  color: var(--cinza-escuro, #3A4859);
+  
+   
+}
+
+
+menu a{
+  display: flex;
+  font-size: 0.75rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+
+menu a:hover {
+  background-color: rgb(53, 53, 53);
+  padding: 0.80em;
+  color: white;
+
+}
+
+
+
+
+
+.menus_nav #options a {
+  color: rgb(0, 0, 0);
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+
+
+#language{
+  display: flex;
+width: 6.25rem;
+padding: 0.625rem;
+flex-direction: column;
+align-items: flex-start;
+
+}
+
+
+
+
+.menus_nav  .icon {
+  
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  padding: 0.625rem;
+}
+
+
+
+
+.menus_nav  a.icon {
+  
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+
+
+
+.menus_nav {
+    overflow: hidden;
+    background-color:   #eaeaec;
+    position: relative;
+    width: 95vw;
+    margin: auto;
+
+  }
+
+
+  .menus_nav #options {
+    display: none;
+    background-color: rgb(53, 53, 53);
+    
+  
+  }
+
+  .menus_nav #options a {
+    color: white;
+    text-decoration: none;
+  
+  }
+
+  
+
+
+  .menus_nav #options a:hover{
+    background-color: #b50f0f;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+
+
+  /*welcome*/
+
+  #welcome{
+    background-image: url(Welcome-mobile.jpg);
+    height: 300px;
+    background-attachment: fixed;  /* a imagem fica fixa mesmo que se faça scroll*/
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+  }
+
+  #welcome>p{
+    color: var(--cinza-escuro, #000000);
+
+font-family: Inter;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+position: absolute;
+left: 20px;
+bottom: 20px;
+  }
